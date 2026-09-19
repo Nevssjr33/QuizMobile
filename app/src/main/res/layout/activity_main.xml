@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prova 1 - Mobile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome completo"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Em um aplicativo Android, qual elemento normalmente representa uma tela com a qual o usuário pode interagir?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q1A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) View" />
+
+            <RadioButton
+                android:id="@+id/q1B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) Layout" />
+
+            <RadioButton
+                android:id="@+id/q1C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) Activity" />
+
+            <RadioButton
+                android:id="@+id/q1D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) Window" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Considerando um campo EditText já vinculado ao código Java, qual alternativa obtém corretamente o texto digitado pelo usuário como uma String?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q2A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) editText.toString()" />
+
+            <RadioButton
+                android:id="@+id/q2B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) editText.getText()" />
+
+            <RadioButton
+                android:id="@+id/q2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) editText.getText().toString()" />
+
+            <RadioButton
+                android:id="@+id/q2D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) editText.getValue().toString()" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finalizar Prova" />
+
+    </LinearLayout>
+</ScrollView>
